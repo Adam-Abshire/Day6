@@ -52,36 +52,27 @@ public class HomeWork {
 		 */
 		
 		// Question 2 Switch
-		char gender = 'M';
+		char gender = 'm';
 		String genderChoice;
 		switch (gender) {
 		case 'm':
-			genderChoice = "Male";
-			break;
 		case 'M':
 			genderChoice = "Male";
 			break;
 		case 'f':
-			genderChoice = "Female";
-			break;
 		case 'F':
 			genderChoice = "Female";
 			break;
 		default:
 			genderChoice = "Not a gender... please select m or f";
-			break;
 		}
 		System.out.println("Question 2 :: Choosing a Gender");
 		System.out.println("Switch: " + genderChoice);
 		
 		// Question 2 If-Else
-		if (gender == 'f') {
+		if (gender == 'f' || gender == 'F') {
 			genderChoice = "Female";
-		} else if (gender == 'F') {
-			genderChoice = "Female";
-		} else if (gender == 'M') {
-			genderChoice = "Male";
-		} else if (gender == 'm') {
+		} else if (gender == 'm' || gender == 'M') {
 			genderChoice = "Male";
 		} else {
 			genderChoice = "Not a gender.. please select m or f";
@@ -97,7 +88,7 @@ public class HomeWork {
 		 */
 		
 		// Question 3 Switch
-		int number = 3;
+		int number = 4;
 		String isOdd = "";
 
 		switch (number % 2) {
@@ -106,7 +97,6 @@ public class HomeWork {
 			break;
 		default:
 			isOdd = "Odd Number";
-			break;
 		}
 		System.out.println("Question 3 :: Even or Odd");
 		System.out.println("Switch: " + isOdd);
